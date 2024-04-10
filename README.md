@@ -19,7 +19,9 @@ Change the name of the master branch to main (Very Important)
 ```bash
 git config --global init.defaultBranch main
 ```
-Enter in terminal to see the config 
+
+Enter in terminal to see the config
+
 ```bash
 git config --list
 ```
@@ -37,6 +39,11 @@ Open the file id_ed25519.pub inside your .ssh directory and copy paste the code 
 ```url
 https://github.com/settings/keys
 ```
+
+Click New ssh key button
+![alt text](sshbutton.png)
+Fill out the required fields and click the add ssh key button
+![alt text](newsshsubmit.png)
 
 Once the ssh key is added, when you try to push/create a repository a popup with ask to add your system to github fully type yes.
 
