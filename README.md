@@ -25,6 +25,13 @@ Enter in terminal to see the config
 ```bash
 git config --list
 ```
+The terminal should look something like this 
+```bash
+git config --list
+user.name=Your Github User Name Here
+user.email=your@email.com
+init.defaultbranch=main
+```
 
 # Generating an SSH key
 
