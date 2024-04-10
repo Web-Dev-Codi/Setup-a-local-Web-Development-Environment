@@ -35,6 +35,8 @@ init.defaultbranch=main
 
 # Generating an SSH key
 
+Remain in the terminal and enter these commands
+
 ```bash
 ssh-keygen -t ed25519 -C yourgithub@email.com
 ```
