@@ -14,7 +14,7 @@ Enter the email you used to signup for GitHub
 git config --global user.email "your@email.com"
 ```
 
-Change the name of the mastere branch to main (Very Important)
+Change the name of the master branch to main (Very Important)
 
 ```bash
 git config --global init.defaultBranch main
