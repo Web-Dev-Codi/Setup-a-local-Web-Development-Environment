@@ -19,6 +19,10 @@ Change the name of the mastere branch to main (Very Important)
 ```bash
 git config --global init.defaultBranch main
 ```
+Enter in terminal to see the config 
+```bash
+git config --list
+```
 
 # Generating an SSH key
 
