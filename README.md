@@ -34,7 +34,7 @@ ssh-keygen -t ed25519 -C yourgithub@email.com
 
 Hit Enter until the process is done
 
-Open the file id_ed25519.pub inside your .ssh directory and copy paste the code to your github account by adding the ssh key here.
+Open the file id_ed25519.pub inside your .ssh directory and copy paste the code to your github account by adding the ssh key the link here.
 
 ```url
 https://github.com/settings/keys
