@@ -25,7 +25,9 @@ Enter in terminal to see the config
 ```bash
 git config --list
 ```
-The terminal should look something like this 
+
+The terminal should look something like this
+
 ```bash
 git config --list
 user.name=Your Github User Name Here
@@ -44,9 +46,11 @@ ssh-keygen -t ed25519 -C yourgithub@email.com
 Hit Enter until the process is done
 
 In the terminal open the file id_ed25519.pub inside the .ssh directory within your Home directory with the following command.
+
 ```bash
-cat id_ed25519.pub 
+cat id_ed25519.pub
 ```
+
 and copy paste the code to your github account by adding the ssh key the link here.
 
 ```url
