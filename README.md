@@ -10,11 +10,11 @@ nvm is a version manager for [node.js](https://nodejs.org/en/), designed to be i
 To **install** or **update** nvm, you should use the following cURL(for Linux, and MacOS) or Wget ( for Windows Powershell users) command:
 
 ```sh
-    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 ```
 
 ```sh
-    wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 ```
 
 Running either of the above commands downloads a script and runs it. The script clones the nvm repository to `~/.nvm`, and attempts to add the source lines from the snippet below to the correct profile file (`~/.bash_profile`, `~/.zshrc`, `~/.profile`, or `~/.bashrc`).
@@ -32,31 +32,31 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 To verify that nvm has been installed, do:
 
 ```sh
-    command -v nvm
+command -v nvm
 ```
 
 or 
 
 ```sh
-    nvm -v # to see the version number example: 0.39.3
+nvm -v # to see the version number example: 0.39.3
 ```
 
 If you want to see what versions are available to install:
 
 ```sh
-    nvm ls-remote
+nvm ls-remote
 ```
 
 To install a specific version of node:
 
 ```sh
-    nvm install 14.7.0 # or 16.3.0, 12.22.1, etc
+nvm install 14.7.0 # or 16.3.0, 12.22.1, etc
 ```
 
 To install the Long-term Support (A.K.A Stable version) of node:
 
 ```sh
-    nvm install --lts
+nvm install --lts
 ```
 
 ## Setting up Node.js on Windows
@@ -65,16 +65,16 @@ To install the Long-term Support (A.K.A Stable version) of node:
 
 ```sh
 # installs fnm (Fast Node Manager)
-    winget install Schniz.fnm
+winget install Schniz.fnm
 
 # download and install Node.js
-    fnm use --install-if-missing 20
+fnm use --install-if-missing 20
 
 # verifies the right Node.js version is in the environment
-    node -v # should print `v20.14.0`
+node -v # should print `v20.14.0`
 
 # verifies the right NPM version is in the environment
-    npm -v # should print `10.7.0`
+npm -v # should print `10.7.0`
 ```
 
 or download the windows installer via ([Node Windows installer](https://nodejs.org/en/download/prebuilt-installer)) and follow install instructions
@@ -82,7 +82,7 @@ or download the windows installer via ([Node Windows installer](https://nodejs.o
 To verify that Node.js has been installed properly, in your shell type the following command:
 
 ```sh
-    node --version
+node --version
 ```
 
 ## Setting up git on Linux
@@ -94,92 +94,92 @@ For administrator privileges be sure to use `sudo`
 
 For the latest stable version for your release of Debian/Ubuntu
 
-```bash
-    apt-get install git
+```sh
+apt-get install git
 ```
 
 For Ubuntu, this PPA provides the latest stable upstream Git version
 
-```bash
-    add-apt-repository ppa:git-core/ppa 
+```sh
+add-apt-repository ppa:git-core/ppa 
 
-    apt update
+apt update
 
-    apt install git
+apt install git
 ```
 
 ### Fedora
 
 ##### (up to Fedora 21)
 
-```bash
-    yum install git
+```sh
+yum install git
 ```
 
 ##### (Fedora 22 and later)
 
-```bash
-    dnf install git
+```sh
+dnf install git
 ```
 
 ### Gentoo
 
-```bash
-    emerge --ask --verbose dev-vcs/git
+```sh
+emerge --ask --verbose dev-vcs/git
 ```
 
 ### Arch Linux
 
-```bash
-    pacman -S git
+```sh
+pacman -S git
 ```
 
 ### openSUSE
 
-```bash
-    zypper install git
+```sh
+zypper install git
 ```
 
 ### Mageia
 
-```bash
-    urpmi git
+```sh
+urpmi git
 ```
 
 ### Nix/NixOS
 
-```bash
-    nix-env -i git
+```sh
+nix-env -i git
 ```
 
 ### FreeBSD
 
-```bash
-    pkg install git
+```sh
+pkg install git
 ```
 
 ### Solaris 9/10/11 ([OpenCSW](https://www.opencsw.org/))
 
-```bash
-    pkgutil -i git
+```sh
+pkgutil -i git
 ```
 
 ### Solaris 11 Express
 
-```bash
-    pkg install developer/versioning/git
+```sh
+pkg install developer/versioning/git
 ```
 
 ### OpenBSD
 
-```bash
-    pkg_add git
+```sh
+pkg_add git
 ```
 
 ### Alpine
 
-```bash
-    apk add git
+```sh
+apk add git
 ```
 
 ## Setting up git on Windows 10/11
@@ -192,8 +192,8 @@ For Ubuntu, this PPA provides the latest stable upstream Git version
 
 ### Check your git installation in the terminal
 
-```bash
-    git --version
+```sh
+git --version
 ```
 
 ### Setting up git credentials via the terminal
@@ -202,51 +202,51 @@ In your terminal type these commands **without quotes**
 
 Enter your Github user name
 
-```bash
-    git config --global user.name "Your Github User Name Here"
+```sh
+git config --global user.name "Your Github User Name Here"
 ```
 
 Enter the email you used to sign-up for GitHub (**Very Important**)
 
-```bash
-    git config --global user.email "your@email.com"
+```sh
+git config --global user.email "your@email.com"
 ```
 
 Change the name of the master branch to main (Very Important)
 
-```bash
-    git config --global init.defaultBranch main
+```sh
+git config --global init.defaultBranch main
 ```
 
 Enter in terminal to see the config
 
-```bash
-    git config --list
+```sh
+git config --list
 ```
 
 The terminal should look something like this
 
-```bash
-    git config --list
-    user.name=Your Github User Name Here
-    user.email=your@email.com
-    init.defaultbranch=main
+```sh
+git config --list
+user.name=Your Github User Name Here
+user.email=your@email.com
+init.defaultbranch=main
 ```
 
 # Generating an SSH key
 
 Remain in the terminal and enter these commands
 
-```bash
-    ssh-keygen -t ed25519 -C yourgithub@email.com
+```sh
+ssh-keygen -t ed25519 -C yourgithub@email.com
 ```
 
 Hit Enter until the process is done
 
 In the terminal open the file id_ed25519.pub inside the .ssh directory within your Home directory with the following command.
 
-```bash
-    cat id_ed25519.pub
+```sh
+cat id_ed25519.pub
 ```
 
 copy paste the code to your github account by adding the ssh key [here](https://github.com/settings/keys)
