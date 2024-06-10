@@ -258,4 +258,6 @@ Fill out the required fields and click the add ssh key button
 
 Once the ssh key is added, create a repository on [GitHub](https://github.com), clone it, add files, commit and push. When you try to push the repository a popup with ask to add your system to github fully type `yes`, and hit `ENTER`.
 
-Enjoy being connected to github via ssh
+Have fun and enjoy your new development environment.
+
+Special thanks to nvm, Node.js, and git for helping me with the detailed information.
